@@ -1,25 +1,16 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.6.33801.468
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRandomNumber", "TheRandomNumber\TheRandomNumber.csproj", "{317414F3-E377-468D-BFD9-4609971F5B92}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{317414F3-E377-468D-BFD9-4609971F5B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{317414F3-E377-468D-BFD9-4609971F5B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{317414F3-E377-468D-BFD9-4609971F5B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{317414F3-E377-468D-BFD9-4609971F5B92}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BF1AC764-E71F-4CBB-AD90-CC50C5DE1B5C}
-	EndGlobalSection
-EndGlobal
+namespace TheRandomNumber
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+
+            int num = random.Next(1000, 9999);
+
+            Console.WriteLine("the random number is : " + num);
+
+            Console.ReadKey();
+        }
+    }
+}
